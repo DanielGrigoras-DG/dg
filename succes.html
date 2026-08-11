@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<!--
+    Hyperspace by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>Nachricht gesendet | D&G Garten & Reinigungsservice</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <style>
+            /* Păstrăm exact aceleași culori de fundal ca pe site */
+            body, #wrapper { background-color: #0f140f !important; color: #ffffff !important; }
+            
+            /* Stil centrat pentru mesajul de succes */
+            .success-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                min-height: 100vh;
+                padding: 2em;
+            }
+
+            .success-icon-box {
+                width: 80px;
+                height: 80px;
+                background-color: #e8f5e9;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 25px;
+                box-shadow: 0 4px 15px rgba(46, 125, 50, 0.3);
+            }
+
+            .success-icon-box i {
+                font-size: 38px !important;
+                color: #2e7d32 !important;
+            }
+
+            h1 {
+                color: #4caf50 !important;
+                font-size: 2.2rem !important;
+                margin-bottom: 0.5em !important;
+            }
+
+            p {
+                color: #d1d5d1 !important;
+                font-size: 1.1rem !important;
+                max-width: 500px;
+                margin-bottom: 2em !important;
+                line-height: 1.6 !important;
+            }
+
+            /* Stilul butonului adaptat după designul tău */
+            .button.dg-btn {
+                display: inline-flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                gap: 10px !important;
+                background: linear-gradient(135deg, #2e7d32 0%, #1b5e20 100%) !important;
+                color: #ffffff !important;
+                font-weight: 600 !important;
+                border-radius: 8px !important;
+                border: none !important;
+                padding: 12px 30px !important;
+                box-shadow: 0 4px 12px rgba(46, 125, 50, 0.25) !important;
+                transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                text-decoration: none !important;
+            }
+
+            .button.dg-btn:hover {
+                background: linear-gradient(135deg, #388e3c 0%, #2e7d32 100%) !important;
+                transform: translateY(-4px) scale(1.03) !important;
+                box-shadow: 0 10px 22px rgba(76, 175, 80, 0.45) !important;
+                color: #ffffff !important;
+            }
+        </style>
+    </head>
+    <body class="is-preload">
+
+        <div id="wrapper">
+            <div class="success-container">
+                <div class="success-icon-box">
+                    <i class="fas fa-check"></i>
+                </div>
+                <h1>Vielen Dank!</h1>
+                <p>Ihre Nachricht wurde erfolgreich gesendet. Wir werden uns schnellstmöglich bei Ihnen melden.</p>
+                <a href="index.html" class="button primary dg-btn">
+                    <i class="fas fa-arrow-left"></i> Zurück zur Startseite
+                </a>
+            </div>
+        </div>
+        
+        <script>
+            if (window.history.replaceState) {
+                window.history.replaceState(null, null, window.location.href);
+            }
+        </script>
+    </body>
+</html>

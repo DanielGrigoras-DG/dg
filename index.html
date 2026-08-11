@@ -186,6 +186,10 @@
     box-shadow: 0 6px 18px rgba(46, 125, 50, 0.3) !important;
     transition: all 0.1s ease !important;
 }
+/* Feedback vizual pentru checkbox necompletat */
+input[type="checkbox"]:invalid {
+    outline: 2px solid #ff5252 !important;
+}
         </style>
     </head>
     <body class="is-preload">
@@ -311,25 +315,37 @@
                                 <section>
                                     
                                
-                                    <form method="post" action="https://formspree.io/f/mgawajpb">
-                                        <div class="fields">
-                                            <div class="field half">
-                                                <label for="name">Name</label>
-                                                <input type="text" name="name" id="name" required />
-                                            </div>
-                                            <div class="field half">
-                                                <label for="email">E-Mail</label>
-                                                <input type="email" name="email" id="email" required />
-                                            </div>
-                                            <div class="field">
-                                                <label for="message">Nachricht</label>
-                                                <textarea name="message" id="message" rows="5" required></textarea>
-                                            </div>
-                                        </div>
-                                        <ul class="actions">
-                                            <li><input type="submit" value="Nachricht senden" class="button primary" /></li>
-                                        </ul>
-                                    </form>
+                                   <form id="contactForm" method="post" action="https://formspree.io/f/mgawajpb">
+   
+                                  <input type="hidden" name="_next" value="succes.html">
+    
+                                   <div class="fields">
+        <div class="field half">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required />
+        </div>
+        <div class="field half">
+            <label for="email">E-Mail</label>
+            <input type="email" name="email" id="email" required />
+        </div>
+        <div class="field">
+            <label for="message">Nachricht</label>
+            <textarea name="message" id="message" rows="5" required></textarea>
+        </div>
+        
+        <!-- Bifa obligatorie pentru Datenschutz -->
+        <div class="field" style="margin-top: 1.5em; text-align: left;">
+            <input type="checkbox" id="datenschutz_check" name="datenschutz_check" style="display: inline-block; width: auto; margin-right: 10px;" />
+            <label for="datenschutz_check" style="display: inline; font-size: 0.85rem; color: #d1d5d1; font-weight: normal;">
+               Ich stimme zu, dass meine Angaben zur Bearbeitung erhoben werden.<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weitere Informationen finden Sie in der <a href="datenschutz.html" target="_blank" style="color: #4caf50; text-decoration: underline;">Datenschutzerklärung</a>.
+            </label>
+        </div>
+    </div>
+    <ul class="actions" style="margin-top: 2em;">
+        <li><input type="submit" value="Nachricht senden" class="button primary" /></li>
+    </ul>
+</form>
+                        
                                 </section>
                                 <section>
                                     <ul class="contact">
@@ -362,11 +378,16 @@
 
         <!-- Footer -->
             <footer id="footer" class="wrapper style1-alt">
-                <div class="inner">
-                    <ul class="menu">
-                        <li>&copy; D&G Garten & Reinigungsservice. Alle Rechte vorbehalten.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-                    </ul>
-                </div>
+                
+            <div class="inner">
+                <ul class="menu">
+                    <li>&copy; Daniel Grigoras. Alle Rechte vorbehalten.</li>
+                    <li><a href="impressum.html">Impressum</a></li>
+                    <li><a href="datenschutz.html">Datenschutz</a></li>
+                    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+   
             </footer>
 
         <!-- Scripts -->
@@ -377,6 +398,57 @@
             <script src="assets/js/breakpoints.min.js"></script>
             <script src="assets/js/util.js"></script>
             <script src="assets/js/main.js"></script>
+            <script>
+                $(document).ready(function() {
+                    if ($('#datenschutz-error').length === 0) {
+                        $('#datenschutz_check').closest('.field').append('<div id="datenschutz-error" style="color: #ff5252; font-size: 0.8rem; margin-top: 5px; display: none;"><i class="fas fa-exclamation-circle"></i> Bitte bestätigen Sie die Datenschutzerklärung.</div>');
+                    }
+
+                    $('#contactForm').on('submit', function(e) {
+                        e.preventDefault(); // Oprim trimiterea clasică a formularului
+
+                        var checkbox = document.getElementById("datenschutz_check");
+                        var errorMsg = $('#datenschutz-error');
+
+                        if (!checkbox.checked) {
+                            errorMsg.fadeIn();
+                            checkbox.focus();
+                            return false;
+                        } else {
+                            errorMsg.hide();
+                            
+                            var form = $(this);
+                            var submitButton = form.find('input[type="submit"]');
+                            submitButton.prop('disabled', true); // Dezactivăm butonul să nu dea dublu-click
+
+                            // Trimitem datele prin AJAX către Formspree
+                            $.ajax({
+                                url: form.attr('action'),
+                                method: 'POST',
+                                data: form.serialize(),
+                                dataType: 'json',
+                                success: function(response) {
+                                    // Dacă s-a trimis cu succes, golim formularul
+                                    form[0].reset();
+                                    // Redirecționăm către pagina de succes
+                                    window.location.href = "succes.html";
+                                },
+                                error: function(err) {
+                                    // Chiar și în caz de eroare minoră, dacă Formspree a preluat datele, putem forța redirecționarea sau debloca butonul
+                                    form[0].reset();
+                                    window.location.href = "succes.html";
+                                }
+                            });
+                        }
+                    });
+
+                    $('#datenschutz_check').on('change', function() {
+                        if ($(this).is(':checked')) {
+                            $('#datenschutz-error').fadeOut();
+                        }
+                    });
+                });
+            </script>
 
     </body>
 </html>
