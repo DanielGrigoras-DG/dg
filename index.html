@@ -190,6 +190,29 @@
 input[type="checkbox"]:invalid {
     outline: 2px solid #ff5252 !important;
 }
+/* Stil pentru Footer-ul de pe index.html */
+#footer {
+    background-color: #0a0d0a !important; /* Un negru verzui profund, mult mai elegant decât movul */
+    padding: 3em 0 !important;
+    border-top: 1px solid #2e7d32 !important; /* O linie fină verde de separare */
+}
+
+/* Facem scrisul din footer (copyright) mult mai clar */
+#footer .menu li {
+    color: #b0b5b0 !important; /* Gri-deschis clar, nu șters */
+}
+
+/* Facem link-urile (Impressum, Datenschutz) vizibile și elegante */
+#footer .menu li a {
+    color: #4caf50 !important; /* Verdele brandului tău */
+    text-decoration: none !important;
+    font-weight: 600 !important;
+    transition: color 0.3s ease !important;
+}
+
+#footer .menu li a:hover {
+    color: #ffffff !important; /* Se fac albe la trecerea mouse-ului */
+}
         </style>
     </head>
     <body class="is-preload">
@@ -383,7 +406,7 @@ input[type="checkbox"]:invalid {
                 <ul class="menu">
                     <li>&copy; Daniel Grigoras. Alle Rechte vorbehalten.</li>
                     <li><a href="impressum.html">Impressum</a></li>
-                    <li><a href="datenschutz.html">Datenschutz</a></li>
+                    <li><a href="datenschutz.html">Datenschutzerklärung</a></li>
                     <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
                 </ul>
             </div>
