@@ -1,477 +1,656 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <!--
     Hyperspace by HTML5 UP
     html5up.net | @ajlkn
     Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-    <head>
-        <title>D&G Garten & Reinigungsservice | Dortmund</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="assets/css/main.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-        <style>
-            /* Curățare culori de fundal & sidebar */
-            body, #wrapper { background-color: #0f140f !important; }
-            #sidebar { background-color: #0a0d0a !important; }
-            #sidebar nav ul li a.active, #sidebar nav ul li a:hover { color: #4caf50 !important; }
-            #intro { background: linear-gradient(135deg, #1b291b 0%, #367c30 100%) !important; }
-            #intro p strong { color: #4caf50 !important; }
+  <head>
+    <title>D&G Garten & Reinigungsservice | Dortmund</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+    <style>
+      /* Curățare culori de fundal & sidebar */
+      body,
+      #wrapper {
+        background-color: #0f140f !important;
+      }
+      #sidebar {
+        background-color: #0a0d0a !important;
+      }
+      #sidebar nav ul li a.active,
+      #sidebar nav ul li a:hover {
+        color: #4caf50 !important;
+      }
+      #intro {
+        background: linear-gradient(
+          135deg,
+          #1b291b 0%,
+          #367c30 100%
+        ) !important;
+      }
+      #intro p strong {
+        color: #4caf50 !important;
+      }
 
-            /* SECȚIUNEA WARUM D&G - DESIGN CURAT & LUMINOS */
-            #two {
-                background-color: #f4f7f4 !important;
-                color: #222222 !important;
-                padding: 4em 2em !important;
-            }
-            #two h2 { color: #2e7d32 !important; margin-bottom: 0.5em !important; }
-            #two p.sub-header { color: #555555 !important; font-size: 1.1em !important; margin-bottom: 2em !important; }
+      /* SECȚIUNEA WARUM D&G - DESIGN CURAT & LUMINOS */
+      #two {
+        background-color: #f4f7f4 !important;
+        color: #222222 !important;
+        padding: 4em 2em !important;
+      }
+      #two h2 {
+        color: #2e7d32 !important;
+        margin-bottom: 0.5em !important;
+      }
+      #two p.sub-header {
+        color: #555555 !important;
+        font-size: 1.1em !important;
+        margin-bottom: 2em !important;
+      }
 
-            /* Grilă proprie de carduri */
-            .dg-grid {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-                gap: 25px;
-                margin-top: 30px;
-            }
+      /* Grilă proprie de carduri */
+      .dg-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+        margin-top: 30px;
+      }
 
-            .dg-card {
-                background: #ffffff !important;
-                border: 1px solid #e0e0e0 !important;
-                border-top: 4px solid #2e7d32 !important;
-                border-radius: 10px !important;
-                padding: 30px 25px !important;
-                box-shadow: 0 4px 12px rgba(0,0,0,0.06) !important;
-                transition: transform 0.2s ease, box-shadow 0.2s ease;
-                text-align: left !important;
-            }
+      .dg-card {
+        background: #ffffff !important;
+        border: 1px solid #e0e0e0 !important;
+        border-top: 4px solid #2e7d32 !important;
+        border-radius: 10px !important;
+        padding: 30px 25px !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06) !important;
+        transition:
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
+        text-align: left !important;
+      }
 
-            .dg-card:hover {
-                transform: translateY(-5px);
-                box-shadow: 0 8px 20px rgba(46, 125, 50, 0.15) !important;
-            }
+      .dg-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(46, 125, 50, 0.15) !important;
+      }
 
-            /* Cerc cu Iconiță Centrat Curat */
-            .dg-icon-box {
-                width: 55px;
-                height: 55px;
-                background-color: #e8f5e9;
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-bottom: 20px;
-            }
+      /* Cerc cu Iconiță Centrat Curat */
+      .dg-icon-box {
+        width: 55px;
+        height: 55px;
+        background-color: #e8f5e9;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
 
-            .dg-icon-box i {
-                font-size: 24px !important;
-                color: #2e7d32 !important;
-            }
+      .dg-icon-box i {
+        font-size: 24px !important;
+        color: #2e7d32 !important;
+      }
 
-            .dg-card h3 {
-                color: #1b4313 !important;
-                font-size: 1.2rem !important;
-                margin: 0 0 10px 0 !important;
-                font-weight: bold !important;
-                text-transform: none !important;
-                letter-spacing: normal !important;
-            }
+      .dg-card h3 {
+        color: #1b4313 !important;
+        font-size: 1.2rem !important;
+        margin: 0 0 10px 0 !important;
+        font-weight: bold !important;
+        text-transform: none !important;
+        letter-spacing: normal !important;
+      }
 
-            .dg-card p {
-                color: #666666 !important;
-                font-size: 0.95rem !important;
-                line-height: 1.5 !important;
-                margin: 0 !important;
-            }
+      .dg-card p {
+        color: #666666 !important;
+        font-size: 0.95rem !important;
+        line-height: 1.5 !important;
+        margin: 0 !important;
+      }
 
-            /* Contact section style fix */
-            #three { background-color: #0f140f !important; }
-            #three h2 { color: #4caf50 !important; }
-            .wrapper.style2 { background: linear-gradient(135deg, #1b291b 0%, #367c30 100%) !important;  }
+      /* Contact section style fix */
+      #three {
+        background-color: #0f140f !important;
+      }
+      #three h2 {
+        color: #4caf50 !important;
+      }
+      .wrapper.style2 {
+        background: linear-gradient(
+          135deg,
+          #1b291b 0%,
+          #367c30 100%
+        ) !important;
+      }
 
-            /* ==========================================================
+      /* ==========================================================
                STIL NOU SI EFECT HOVER PENTRU BUTOANELE "ANFRAGEN"
                ========================================================== */
-            .button.dg-btn {
-                display: inline-flex !important;
-                align-items: center !important;
-                justify-content: center !important;
-                gap: 10px !important;
-                background: linear-gradient(135deg, #2e7d32 0%, #1b5e20 100%) !important;
-                color: #ffffff !important;
-                font-weight: 600 !important;
-                border-radius: 8px !important;
-                border: none !important;
-                box-shadow: 0 4px 12px rgba(46, 125, 50, 0.25) !important;
-                transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
-                text-transform: uppercase;
-                letter-spacing: 1px;
-            }
+      .button.dg-btn {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 10px !important;
+        background: linear-gradient(
+          135deg,
+          #2e7d32 0%,
+          #1b5e20 100%
+        ) !important;
+        color: #ffffff !important;
+        font-weight: 600 !important;
+        border-radius: 8px !important;
+        border: none !important;
+        box-shadow: 0 4px 12px rgba(46, 125, 50, 0.25) !important;
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
 
-            /* EFECTUL HOVER */
-            .button.dg-btn:hover {
-                background: linear-gradient(135deg, #388e3c 0%, #2e7d32 100%) !important;
-                transform: translateY(-4px) scale(1.03) !important;
-                box-shadow: 0 10px 22px rgba(76, 175, 80, 0.45) !important;
-                color: #ffffff !important;
-            }
+      /* EFECTUL HOVER */
+      .button.dg-btn:hover {
+        background: linear-gradient(
+          135deg,
+          #388e3c 0%,
+          #2e7d32 100%
+        ) !important;
+        transform: translateY(-4px) scale(1.03) !important;
+        box-shadow: 0 10px 22px rgba(76, 175, 80, 0.45) !important;
+        color: #ffffff !important;
+      }
 
-            /* Efect la apăsare (Click) */
-            .button.dg-btn:active {
-                transform: translateY(-1px) scale(0.98) !important;
-                box-shadow: 0 4px 10px rgba(46, 125, 50, 0.3) !important;
-            }
+      /* Efect la apăsare (Click) */
+      .button.dg-btn:active {
+        transform: translateY(-1px) scale(0.98) !important;
+        box-shadow: 0 4px 10px rgba(46, 125, 50, 0.3) !important;
+      }
 
-            /* Animație pe pictograma din buton */
-            .button.dg-btn i {
-                transition: transform 0.3s ease !important;
-            }
+      /* Animație pe pictograma din buton */
+      .button.dg-btn i {
+        transition: transform 0.3s ease !important;
+      }
 
-            .button.dg-btn:hover i {
-                transform: translateX(5px) rotate(-10deg) !important;
-            }
+      .button.dg-btn:hover i {
+        transform: translateX(5px) rotate(-10deg) !important;
+      }
 
-            /* ==========================================================
+      /* ==========================================================
                AJUSTĂRI SECȚIUNEA 1 (SERVICII) - DOAR PE DESKTOP / LAPTOP
                ========================================================== */
-            @media screen and (min-width: 981px) {
-                /* Mărim containerul cu poza (la 45% din secțiune) */
-                #one .spotlights > section > .image {
-                    width: 45% !important;
-                    min-width: 45% !important;
-                    max-height: 400px !important;
-                }
+      @media screen and (min-width: 981px) {
+        /* Mărim containerul cu poza (la 45% din secțiune) */
+        #one .spotlights > section > .image {
+          width: 45% !important;
+          min-width: 45% !important;
+          max-height: 400px !important;
+        }
 
-                /* Restul de 55% merge către text */
-                #one .spotlights > section > .content {
-                    width: 55% !important;
-                    padding: 2.5em 3em !important;
-                }
+        /* Restul de 55% merge către text */
+        #one .spotlights > section > .content {
+          width: 55% !important;
+          padding: 2.5em 3em !important;
+        }
 
-                /* Titlurile serviciilor puțin mai elegante */
-                #one .content h2 {
-                    font-size: 1.4rem !important;
-                    margin-bottom: 0.6em !important;
-                }
+        /* Titlurile serviciilor puțin mai elegante */
+        #one .content h2 {
+          font-size: 1.4rem !important;
+          margin-bottom: 0.6em !important;
+        }
 
-                /* Textul descrierilor serviciilor mai mic și mai fin finisat */
-                #one .content p {
-                    font-size: 0.88rem !important;
-                    line-height: 1.65 !important;
-                    color: #d1d5d1 !important;
-                }
-            }
+        /* Textul descrierilor serviciilor mai mic și mai fin finisat */
+        #one .content p {
+          font-size: 0.88rem !important;
+          line-height: 1.65 !important;
+          color: #d1d5d1 !important;
+        }
+      }
 
-            /* ==========================================================
+      /* ==========================================================
                REGLAJE PENTRU MOBIL ȘI TABLETĂ (Păstrează layout-ul perfect)
                ========================================================== */
-            @media screen and (max-width: 980px) {
-                #one .spotlights > section > .image {
-                    width: 100% !important;
-                    max-height: 260px !important;
-                }
-                #one .content h2 {
-                    font-size: 1.3rem !important;
-                }
-                #one .content p {
-                    font-size: 0.95rem !important;
-                }
-            }
-						/* Face cardurile să reacționeze la atingerea cu degetul pe mobil */
-.dg-card:active {
-    transform: scale(0.97) !important;
-    border-top-color: #388e3c !important;
-    box-shadow: 0 6px 18px rgba(46, 125, 50, 0.3) !important;
-    transition: all 0.1s ease !important;
-}
-/* Feedback vizual pentru checkbox necompletat */
-input[type="checkbox"]:invalid {
-    outline: 2px solid #ff5252 !important;
-}
-/* Stil pentru Footer-ul de pe index.html */
-#footer {
-    background-color: #0a0d0a !important; /* Un negru verzui profund, mult mai elegant decât movul */
-    padding: 3em 0 !important;
-    border-top: 1px solid #2e7d32 !important; /* O linie fină verde de separare */
-}
+      @media screen and (max-width: 980px) {
+        #one .spotlights > section > .image {
+          width: 100% !important;
+          max-height: 260px !important;
+        }
+        #one .content h2 {
+          font-size: 1.3rem !important;
+        }
+        #one .content p {
+          font-size: 0.95rem !important;
+        }
+      }
+      /* Face cardurile să reacționeze la atingerea cu degetul pe mobil */
+      .dg-card:active {
+        transform: scale(0.97) !important;
+        border-top-color: #388e3c !important;
+        box-shadow: 0 6px 18px rgba(46, 125, 50, 0.3) !important;
+        transition: all 0.1s ease !important;
+      }
+      /* Feedback vizual pentru checkbox necompletat */
+      input[type="checkbox"]:invalid {
+        outline: 2px solid #ff5252 !important;
+      }
+      /* Stil pentru Footer-ul de pe index.html */
+      #footer {
+        background-color: #0a0d0a !important; /* Un negru verzui profund, mult mai elegant decât movul */
+        padding: 3em 0 !important;
+        border-top: 1px solid #2e7d32 !important; /* O linie fină verde de separare */
+      }
 
-/* Facem scrisul din footer (copyright) mult mai clar */
-#footer .menu li {
-    color: #b0b5b0 !important; /* Gri-deschis clar, nu șters */
-}
+      /* Facem scrisul din footer (copyright) mult mai clar */
+      #footer .menu li {
+        color: #b0b5b0 !important; /* Gri-deschis clar, nu șters */
+      }
 
-/* Facem link-urile (Impressum, Datenschutz) vizibile și elegante */
-#footer .menu li a {
-    color: #4caf50 !important; /* Verdele brandului tău */
-    text-decoration: none !important;
-    font-weight: 600 !important;
-    transition: color 0.3s ease !important;
-}
+      /* Facem link-urile (Impressum, Datenschutz) vizibile și elegante */
+      #footer .menu li a {
+        color: #4caf50 !important; /* Verdele brandului tău */
+        text-decoration: none !important;
+        font-weight: 600 !important;
+        transition: color 0.3s ease !important;
+      }
 
-#footer .menu li a:hover {
-    color: #ffffff !important; /* Se fac albe la trecerea mouse-ului */
-}
-        </style>
-    </head>
-    <body class="is-preload">
+      #footer .menu li a:hover {
+        color: #ffffff !important; /* Se fac albe la trecerea mouse-ului */
+      }
+    </style>
+  </head>
+  <body class="is-preload">
+    <!-- Sidebar -->
+    <section id="sidebar">
+      <div class="inner">
+        <nav>
+          <ul>
+            <li><a href="#intro">Willkommen</a></li>
+            <li><a href="#one">Unsere Leistungen</a></li>
+            <li><a href="#two">Warum D&G?</a></li>
+            <li><a href="#three">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
 
-        <!-- Sidebar -->
-            <section id="sidebar">
-                <div class="inner">
-                    <nav>
-                        <ul>
-                            <li><a href="#intro">Willkommen</a></li>
-                            <li><a href="#one">Unsere Leistungen</a></li>
-                            <li><a href="#two">Warum D&G?</a></li>
-                            <li><a href="#three">Kontakt</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </section>
-
-        <!-- Wrapper -->
-            <div id="wrapper">
-
-                <!-- Intro -->
-                    <section id="intro" class="wrapper style1 fullscreen fade-up">
-                        <div class="inner">
-                            <h1>D&G Garten & Reinigungsservice</h1>
-                            <p><strong>Sauber. Gepflegt. Zuverlässig.</strong><br />
-                            Ihr zuverlässiger Partner für gepflegte Immobilien in Dortmund & Umgebung.</p>
-                            <ul class="actions">
-                                <li><a href="#one" class="button scrolly">Unsere Leistungen</a></li>
-                                <li><a href="#three" class="button primary scrolly dg-btn">Jetzt Anrufen</a></li>
-                            </ul>
-                        </div>
-                    </section>
-
-                <!-- One -->
-                    <section id="one" class="wrapper style2 spotlights">
-                        <section>
-                            <a href="#three" class="image"><img src="images/pic01.png" alt="Gartenpflege" data-position="center center" /></a>
-                            <div class="content">
-                                <div class="inner">
-                                    <h2>Gartenpflege</h2>
-                                    <p>Für gepflegte Grünflächen und ein schönes Umfeld. Wir übernehmen Rasenmähen, Heckenschnitt, Unkrautentfernung, Beetpflege und Laubentfernung.</p>
-                                    <ul class="actions">
-                                        <li><a href="#three" class="button primary scrolly dg-btn">Anfragen <i class="fas fa-paper-plane"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </section>
-                        <section>
-                            <a href="#three" class="image"><img src="images/pic02.png" alt="Reinigungsservice" data-position="top center" /></a>
-                            <div class="content">
-                                <div class="inner">
-                                    <h2>Reinigungsservice</h2>
-                                    <p>Sauberkeit in Treppenhäusern, Büros und Gebäuden. Professionelle Treppenhausreinigung, Gebäudereinigung und Wohnungsreinigung (vor Neuvermietung oder nach Auszug).</p>
-                                    <ul class="actions">
-                                        <li><a href="#three" class="button primary scrolly dg-btn">Anfragen <i class="fas fa-paper-plane"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </section>
-                        <section>
-                            <a href="#three" class="image"><img src="images/pic03.png" alt="Hausmeisterservice" data-position="25% 25%" /></a>
-                            <div class="content">
-                                <div class="inner">
-                                    <h2>Hausmeisterservice & Entrümpelung</h2>
-                                    <p>Rundum-Service für Ihre Immobilie: Objektbetreuung, kleine Reparaturen, Winterdienst sowie schnelle und diskrete Entrümpelungen (Wohnungen, Keller, Dachböden).</p>
-                                    <ul class="actions">
-                                        <li><a href="#three" class="button primary scrolly dg-btn">Anfragen <i class="fas fa-paper-plane"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </section>
-                    </section>
-
-                <!-- Two -->
-                    <section id="two">
-                        <div class="inner">
-                            <h2>Warum D&G Service?</h2>
-                            <p class="sub-header">Wir sorgen für Sauberkeit, Ordnung und gepflegte Außenanlagen – für zufriedene Mieter und nachhaltigen Werterhalt Ihrer Immobilie.</p>
-
-                            <div class="dg-grid">
-                                <div class="dg-card">
-                                    <div class="dg-icon-box">
-                                        <i class="fas fa-clock"></i>
-                                    </div>
-                                    <h3>Zuverlässig & Pünktlich</h3>
-                                    <p>Wir halten, was wir versprechen – Termintreue und Verlässlichkeit stehen bei uns an erster Stelle.</p>
-                                </div>
-
-                                <div class="dg-card">
-                                    <div class="dg-icon-box">
-                                        <i class="fas fa-tag"></i>
-                                    </div>
-                                    <h3>Faire Preise</h3>
-                                    <p>Individuelle Lösungen nach Ihrem Bedarf zu transparenten und fairen Konditionen.</p>
-                                </div>
-
-                                <div class="dg-card">
-                                    <div class="dg-icon-box">
-                                        <i class="fas fa-award"></i>
-                                    </div>
-                                    <h3>Hohe Qualität</h3>
-                                    <p>Erfahrung, Qualität und persönlicher Einsatz für ein makelloses Ergebnis.</p>
-                                </div>
-
-                                <div class="dg-card">
-                                    <div class="dg-icon-box">
-                                        <i class="fas fa-tools"></i>
-                                    </div>
-                                    <h3>Alles aus einer Hand</h3>
-                                    <p>Ein Ansprechpartner für viele Lösungen rund um Garten, Reinigung und Wartung.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                <!-- Three -->
-                    <section id="three" class="wrapper style1 fade-up">
-                        <div class="inner">
-                            <h2>Kontaktieren Sie uns!</h2>
-                            <p>Wir freuen uns auf Ihre Anfrage. Rufen Sie uns an oder schreiben Sie uns direkt eine Nachricht!</p>
-                            <div class="split style1">
-                                <section>
-                                    
-                               
-                                   <form id="contactForm" method="post" action="https://formspree.io/f/mgawajpb">
-   
-                                  <input type="hidden" name="_next" value="succes.html">
-    
-                                   <div class="fields">
-        <div class="field half">
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" required />
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Intro -->
+      <section id="intro" class="wrapper style1 fullscreen fade-up">
+        <div class="inner">
+          <h1>D&G Garten & Reinigungsservice</h1>
+          <p>
+            <strong>Sauber. Gepflegt. Zuverlässig.</strong><br />
+            Ihr zuverlässiger Partner für gepflegte Immobilien in Dortmund &
+            Umgebung.
+          </p>
+          <ul class="actions">
+            <li><a href="#one" class="button scrolly">Unsere Leistungen</a></li>
+            <li>
+              <a href="#three" class="button primary scrolly dg-btn"
+                >Jetzt Anrufen</a
+              >
+            </li>
+          </ul>
         </div>
-        <div class="field half">
-            <label for="email">E-Mail</label>
-            <input type="email" name="email" id="email" required />
-        </div>
-        <div class="field">
-            <label for="message">Nachricht</label>
-            <textarea name="message" id="message" rows="5" required></textarea>
-        </div>
-        
-        <!-- Bifa obligatorie pentru Datenschutz -->
-        <div class="field" style="margin-top: 1.5em; text-align: left;">
-            <input type="checkbox" id="datenschutz_check" name="datenschutz_check" style="display: inline-block; width: auto; margin-right: 10px;" />
-            <label for="datenschutz_check" style="display: inline; font-size: 0.85rem; color: #d1d5d1; font-weight: normal;">
-               Ich stimme zu, dass meine Angaben zur Bearbeitung erhoben werden.<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weitere Informationen finden Sie in der <a href="datenschutz.html" target="_blank" style="color: #4caf50; text-decoration: underline;">Datenschutzerklärung</a>.
-            </label>
-        </div>
-    </div>
-    <ul class="actions" style="margin-top: 2em;">
-        <li><input type="submit" value="Nachricht senden" class="button primary" /></li>
-    </ul>
-</form>
-                        
-                                </section>
-                                <section>
-                                    <ul class="contact">
-                                        <li>
-                                            <h3>Inhaber</h3>
-                                            <span>Daniel Grigoras</span>
-                                        </li>
-                                        <li>
-                                            <h3>Telefon / WhatsApp</h3>
-                                            <a href="tel:+4915510585489" style="color: #4caf50; font-weight: bold;">+49 155 10585489</a>
-                                        </li>
-                                        <li>
-                                            <h3>E-Mail</h3>
-                                            <a href="mailto:danielgrigoras@mail.de">danielgrigoras@mail.de</a>
-                                            <!-- Secțiune Cod QR -->
+      </section>
 
-                                        </li>
-                                        <li>
-                                            <h3>Einsatzgebiet</h3>
-                                            <span>Dortmund & Umgebung<br /><strong>Wir sind für Sie da!</strong></span>
-                                        </li>
-                                    </ul>
-                                    
-                                </section>
-                            </div>
-                        </div>
-                    </section>
-
-            </div>
-
-        <!-- Footer -->
-            <footer id="footer" class="wrapper style1-alt">
-                
+      <!-- One -->
+      <section id="one" class="wrapper style2 spotlights">
+        <section>
+          <a href="#three" class="image"
+            ><img
+              src="images/pic01.png"
+              alt="Gartenpflege"
+              data-position="center center"
+          /></a>
+          <div class="content">
             <div class="inner">
-                <ul class="menu">
-                    <li>&copy; Daniel Grigoras. Alle Rechte vorbehalten.</li>
-                    <li><a href="impressum.html">Impressum</a></li>
-                    <li><a href="datenschutz.html">Datenschutzerklärung</a></li>
-                    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-                </ul>
+              <h2>Gartenpflege</h2>
+              <p>
+                Für gepflegte Grünflächen und ein schönes Umfeld. Wir übernehmen
+                Rasenmähen, Heckenschnitt, Unkrautentfernung, Beetpflege und
+                Laubentfernung.
+              </p>
+              <ul class="actions">
+                <li>
+                  <a href="#three" class="button primary scrolly dg-btn"
+                    >Anfragen <i class="fas fa-paper-plane"></i
+                  ></a>
+                </li>
+              </ul>
             </div>
-   
-            </footer>
+          </div>
+        </section>
+        <section>
+          <a href="#three" class="image"
+            ><img
+              src="images/pic02.png"
+              alt="Reinigungsservice"
+              data-position="top center"
+          /></a>
+          <div class="content">
+            <div class="inner">
+              <h2>Reinigungsservice</h2>
+              <p>
+                Sauberkeit in Treppenhäusern, Büros und Gebäuden. Professionelle
+                Treppenhausreinigung, Gebäudereinigung und Wohnungsreinigung
+                (vor Neuvermietung oder nach Auszug).
+              </p>
+              <ul class="actions">
+                <li>
+                  <a href="#three" class="button primary scrolly dg-btn"
+                    >Anfragen <i class="fas fa-paper-plane"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section>
+          <a href="#three" class="image"
+            ><img
+              src="images/pic03.png"
+              alt="Hausmeisterservice"
+              data-position="25% 25%"
+          /></a>
+          <div class="content">
+            <div class="inner">
+              <h2>Hausmeisterservice & Entrümpelung</h2>
+              <p>
+                Rundum-Service für Ihre Immobilie: Objektbetreuung, kleine
+                Reparaturen, Winterdienst sowie schnelle und diskrete
+                Entrümpelungen (Wohnungen, Keller, Dachböden).
+              </p>
+              <ul class="actions">
+                <li>
+                  <a href="#three" class="button primary scrolly dg-btn"
+                    >Anfragen <i class="fas fa-paper-plane"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </section>
 
-        <!-- Scripts -->
-            <script src="assets/js/jquery.min.js"></script>
-            <script src="assets/js/jquery.scrollex.min.js"></script>
-            <script src="assets/js/jquery.scrolly.min.js"></script>
-            <script src="assets/js/browser.min.js"></script>
-            <script src="assets/js/breakpoints.min.js"></script>
-            <script src="assets/js/util.js"></script>
-            <script src="assets/js/main.js"></script>
-            <script>
-                $(document).ready(function() {
-                    if ($('#datenschutz-error').length === 0) {
-                        $('#datenschutz_check').closest('.field').append('<div id="datenschutz-error" style="color: #ff5252; font-size: 0.8rem; margin-top: 5px; display: none;"><i class="fas fa-exclamation-circle"></i> Bitte bestätigen Sie die Datenschutzerklärung.</div>');
-                    }
+      <!-- Two -->
+      <section id="two">
+        <div class="inner">
+          <h2>Warum D&G Service?</h2>
+          <p class="sub-header">
+            Wir sorgen für Sauberkeit, Ordnung und gepflegte Außenanlagen – für
+            zufriedene Mieter und nachhaltigen Werterhalt Ihrer Immobilie.
+          </p>
 
-                    $('#contactForm').on('submit', function(e) {
-                        e.preventDefault(); // Oprim trimiterea clasică a formularului
+          <div class="dg-grid">
+            <!-- Card 1 -->
+            <a
+              href="zuverlaessig.html"
+              class="dg-card"
+              style="text-decoration: none"
+            >
+              <div class="dg-icon-box">
+                <i class="fas fa-clock"></i>
+              </div>
+              <h3>Zuverlässig & Pünktlich</h3>
+              <p>
+                Wir halten, was wir versprechen – Termintreue und
+                Verlässlichkeit stehen bei uns an erster Stelle.
+              </p>
+            </a>
 
-                        var checkbox = document.getElementById("datenschutz_check");
-                        var errorMsg = $('#datenschutz-error');
+            <!-- Card 2 -->
+            <a
+              href="faire-preise.html"
+              class="dg-card"
+              style="text-decoration: none"
+            >
+              <div class="dg-icon-box">
+                <i class="fas fa-tag"></i>
+              </div>
+              <h3>Faire Preise</h3>
+              <p>
+                Individuelle Lösungen nach Ihrem Bedarf zu transparenten und
+                fairen Konditionen.
+              </p>
+            </a>
 
-                        if (!checkbox.checked) {
-                            errorMsg.fadeIn();
-                            checkbox.focus();
-                            return false;
-                        } else {
-                            errorMsg.hide();
-                            
-                            var form = $(this);
-                            var submitButton = form.find('input[type="submit"]');
-                            submitButton.prop('disabled', true); // Dezactivăm butonul să nu dea dublu-click
+            <!-- Card 3 -->
+            <a
+              href="hohe-qualitaet.html"
+              class="dg-card"
+              style="text-decoration: none"
+            >
+              <div class="dg-icon-box">
+                <i class="fas fa-award"></i>
+              </div>
+              <h3>Hohe Qualität</h3>
+              <p>
+                Erfahrung, Qualität und persönlicher Einsatz für ein makelloses
+                Ergebnis.
+              </p>
+            </a>
 
-                            // Trimitem datele prin AJAX către Formspree
-                            $.ajax({
-                                url: form.attr('action'),
-                                method: 'POST',
-                                data: form.serialize(),
-                                dataType: 'json',
-                                success: function(response) {
-                                    // Dacă s-a trimis cu succes, golim formularul
-                                    form[0].reset();
-                                    // Redirecționăm către pagina de succes
-                                    window.location.href = "succes.html";
-                                },
-                                error: function(err) {
-                                    // Chiar și în caz de eroare minoră, dacă Formspree a preluat datele, putem forța redirecționarea sau debloca butonul
-                                    form[0].reset();
-                                    window.location.href = "succes.html";
-                                }
-                            });
-                        }
-                    });
+            <!-- Card 4 -->
+            <a
+              href="alles-aus-einer-hand.html"
+              class="dg-card"
+              style="text-decoration: none"
+            >
+              <div class="dg-icon-box">
+                <i class="fas fa-tools"></i>
+              </div>
+              <h3>Alles aus einer Hand</h3>
+              <p>
+                Ein Ansprechpartner für viele Lösungen rund um Garten, Reinigung
+                und Wartung.
+              </p>
+            </a>
+          </div>
+        </div>
+      </section>
 
-                    $('#datenschutz_check').on('change', function() {
-                        if ($(this).is(':checked')) {
-                            $('#datenschutz-error').fadeOut();
-                        }
-                    });
-                });
-            </script>
+      <!-- Three -->
+      <section id="three" class="wrapper style1 fade-up">
+        <div class="inner">
+          <h2>Kontaktieren Sie uns!</h2>
+          <p>
+            Wir freuen uns auf Ihre Anfrage. Rufen Sie uns an oder schreiben Sie
+            uns direkt eine Nachricht!
+          </p>
+          <div class="split style1">
+            <section>
+              <form
+                id="contactForm"
+                method="post"
+                action="https://formspree.io/f/mgawajpb"
+              >
+                <input type="hidden" name="_next" value="succes.html" />
 
-    </body>
+                <div class="fields">
+                  <div class="field half">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required />
+                  </div>
+                  <div class="field half">
+                    <label for="email">E-Mail</label>
+                    <input type="email" name="email" id="email" required />
+                  </div>
+                  <div class="field">
+                    <label for="message">Nachricht</label>
+                    <textarea
+                      name="message"
+                      id="message"
+                      rows="5"
+                      required
+                    ></textarea>
+                  </div>
+
+                  <!-- Bifa obligatorie pentru Datenschutz -->
+                  <div
+                    class="field"
+                    style="margin-top: 1.5em; text-align: left"
+                  >
+                    <input
+                      type="checkbox"
+                      id="datenschutz_check"
+                      name="datenschutz_check"
+                      style="
+                        display: inline-block;
+                        width: auto;
+                        margin-right: 10px;
+                      "
+                    />
+                    <label
+                      for="datenschutz_check"
+                      style="
+                        display: inline;
+                        font-size: 0.85rem;
+                        color: #d1d5d1;
+                        font-weight: normal;
+                      "
+                    >
+                      Ich stimme zu, dass meine Angaben zur Bearbeitung erhoben
+                      werden.Weitere Informationen finden Sie in der
+                      <a
+                        href="datenschutz.html"
+                        target="_blank"
+                        style="color: #4caf50; text-decoration: underline"
+                        >Datenschutzerklärung</a
+                      >.
+                    </label>
+                  </div>
+                </div>
+                <ul class="actions" style="margin-top: 2em">
+                  <li>
+                    <input
+                      type="submit"
+                      value="Nachricht senden"
+                      class="button primary"
+                    />
+                  </li>
+                </ul>
+              </form>
+            </section>
+            <section>
+              <ul class="contact">
+                <li>
+                  <h3>Inhaber</h3>
+                  <span>Daniel Grigoras</span>
+                </li>
+                <li>
+                  <h3>Telefon / WhatsApp</h3>
+                  <a
+                    href="tel:+4915510585489"
+                    style="color: #4caf50; font-weight: bold"
+                    >+49 155 10585489</a
+                  >
+                </li>
+                <li>
+                  <h3>E-Mail</h3>
+                  <a href="mailto:danielgrigoras@mail.de"
+                    >danielgrigoras@mail.de</a
+                  >
+                  <!-- Secțiune Cod QR -->
+                </li>
+                <li>
+                  <h3>Einsatzgebiet</h3>
+                  <span
+                    >Dortmund & Umgebung<br /><strong
+                      >Wir sind für Sie da!</strong
+                    ></span
+                  >
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="wrapper style1-alt">
+      <div class="inner">
+        <ul class="menu">
+          <li>&copy; Daniel Grigoras. Alle Rechte vorbehalten.</li>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutzerklärung</a></li>
+          <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      $(document).ready(function () {
+        if ($("#datenschutz-error").length === 0) {
+          $("#datenschutz_check")
+            .closest(".field")
+            .append(
+              '<div id="datenschutz-error" style="color: #ff5252; font-size: 0.8rem; margin-top: 5px; display: none;"><i class="fas fa-exclamation-circle"></i> Bitte bestätigen Sie die Datenschutzerklärung.</div>',
+            );
+        }
+
+        $("#contactForm").on("submit", function (e) {
+          e.preventDefault(); // Oprim trimiterea clasică a formularului
+
+          var checkbox = document.getElementById("datenschutz_check");
+          var errorMsg = $("#datenschutz-error");
+
+          if (!checkbox.checked) {
+            errorMsg.fadeIn();
+            checkbox.focus();
+            return false;
+          } else {
+            errorMsg.hide();
+
+            var form = $(this);
+            var submitButton = form.find('input[type="submit"]');
+            submitButton.prop("disabled", true); // Dezactivăm butonul să nu dea dublu-click
+
+            // Trimitem datele prin AJAX către Formspree
+            $.ajax({
+              url: form.attr("action"),
+              method: "POST",
+              data: form.serialize(),
+              dataType: "json",
+              success: function (response) {
+                // Dacă s-a trimis cu succes, golim formularul
+                form[0].reset();
+                // Redirecționăm către pagina de succes
+                window.location.href = "succes.html";
+              },
+              error: function (err) {
+                // Chiar și în caz de eroare minoră, dacă Formspree a preluat datele, putem forța redirecționarea sau debloca butonul
+                form[0].reset();
+                window.location.href = "succes.html";
+              },
+            });
+          }
+        });
+
+        $("#datenschutz_check").on("change", function () {
+          if ($(this).is(":checked")) {
+            $("#datenschutz-error").fadeOut();
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
